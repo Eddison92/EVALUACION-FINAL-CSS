@@ -1,0 +1,230 @@
+@font-face{font-family: 'Dacing';
+src: url(../font/DancingScript-Regular.ttf)
+}
+
+body{
+    font-family: 'Dacing';
+    background-color: #02010a;  
+}
+
+#contenido{
+    width: 900px;
+    display: block;
+    margin: auto;
+}
+
+#encabezado{
+    background-color: #5b7989;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 10vh;  
+    animation: Animacion 1s;
+    -webkit-animation: Animacion 1s;
+}
+@-webkit-keyframes Animacion{
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+
+#encabezado > nav{
+    text-align: right;
+    margin-top: 7px;
+    color: white;
+}
+
+#encabezado> nav  > h1{
+    text-shadow: 2px 2px 2px #02010a;
+    display: inline;
+    float: left;
+    margin: 20px 0 0 15px;
+}
+
+#encabezado> nav  > h1 br{
+    display: none;
+}
+#encabezado > nav > ul{
+    list-style-type: none;
+    display: inline-block;
+  }
+
+#encabezado > nav > ul > li{
+      margin: 10px 20px;
+      display: inline-block;   
+  }
+
+
+  #encabezado > nav > ul > li > a{
+    color: white;
+}
+
+.active  a{
+    text-decoration: none;
+}
+
+#principal{
+    background-color: #82c3a6;
+    width: 100%;
+    height: 60vh;
+    align-content: center;
+}
+
+#principal img{
+    width: 80%;
+    height: 90%;
+    margin: 2% 10% ;
+    box-shadow: 2px 2px #02010a;
+}
+
+#contenido-secundario{
+    height: 50vh;
+    background-color: #d5c75f;
+    display: flex;
+    flex-direction:  row;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.2em;
+    
+}
+
+.secundario a {
+    color: #02010a;
+}
+
+.secundario a img{
+    width: 85%;
+    height: 80%;
+    margin:5% 0% 0% 3%;
+    box-shadow: 2px 2px #02010a;
+}
+
+#imagen2 img{
+    transition-property: transform , box-shadow;
+    transition-duration: 1s , 1s;
+}
+
+#imagen2 img:hover{
+    transform: rotate(10deg);
+    box-shadow: 2px 2px #82c3a6;
+}
+
+#imagen3 img{
+    transition-property: transform , box-shadow;
+    transition-duration: 1s , 1s;
+}
+
+#imagen3 img:hover{
+    transform: translate(20px ,-5px);
+    box-shadow: 2px 2px #82c3a6;
+}
+footer{
+    display: flex;
+    background-color: #C6d5c5;
+    border-radius: 0 0 10px 10px;
+    flex-direction: row;  
+}
+.pie{
+    width: 30%;
+    margin: 0 0 0 3%;
+    text-align: center;
+}
+.pie h2{
+    margin: 10 0 5px 0;
+}
+.pie a{
+    color: black;
+    text-decoration: none;
+}
+
+.logos{
+    width: 3vh;
+}
+
+@media (max-width:900px){
+    #contenido{
+        width: 100%;  
+    }
+    #encabezado{
+        height: 25%;  
+    }
+    #encabezado > nav{
+        display: block;
+        margin:0;
+        text-align: initial;
+    }
+    #encabezado> nav  > h1{
+        display: block;
+        float: none;
+        text-align: center;
+        margin: 0px 0 0 0;
+        padding: 20px 0 0 0;
+        font-size: 2em;
+    }
+    #encabezado> nav  > h1 br{
+        display: block;
+    }
+    #encabezado > nav > ul{
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+        font-size: 1.2em;
+        padding: 0;
+      }
+    #principal{
+        height: 70%;
+        padding: 5% 0 2.5% 0;
+    }
+    #principal img{
+        height: 60%; 
+    }
+    #contenido-secundario{
+        height: 60%;
+        display: block; 
+        padding-top: 2.5%;
+    }
+    
+    .secundario a {
+        color: #02010a;
+        display: block;
+        margin: 0 0 1% 0;
+    }
+    
+    .secundario a img{
+        width: 80%;
+        height: 80%;
+        box-shadow: 2px 2px #02010a;
+        margin: 2% 10% ;
+    }
+    footer{
+        display: block;  
+        margin: auto;
+    }
+    .pie{
+        display: block;
+        width: 70%;
+        margin: 0 0 0 8%;
+        text-align: left;
+        padding: 2% 0 2% 0;
+        
+    }
+    .pie h2{
+        margin: 0;
+        font-size: 1.7em;
+    }
+    .pie a{
+        margin: 5px 0 5px 0;
+    }
+
+    .pie p{
+        margin: 5px 0 5px 0 ;
+    }
+}
+
+
+
